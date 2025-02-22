@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import avatar from "../assets/avatar.png";
 
-const AvatarImage = () => {
-  const img = styled.img`
+// styled component
+const img = styled.img`
     position: absolute;
     top: 0;
     left: 0;
@@ -22,6 +22,8 @@ const AvatarImage = () => {
     max-height: 100%;
     object-fit: cover;
   `;
+
+const AvatarImage = () => {
 
   return (
     <div className=" relative flex-shrink-1 p-4 md:p-4 md:order-last order-first">
