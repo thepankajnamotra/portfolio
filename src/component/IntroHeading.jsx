@@ -54,7 +54,6 @@ const IntroHeading = () => {
       </div>
       <AvatarImage/>
     </div>
-    <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 text-black dark:text-white">Recent Blogs</h3>
     <RecentBlogs blogElement= {blog}/>
     </>
   );
