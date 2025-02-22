@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import AvatarImage from "./AvatarImage";
 import RecentBlogs from "./RecentBlogs";
+import Projects from "./Projects";
+import { Anchor, Banana, PenTool } from "lucide-react";
 
 const IntroHeading = () => {
     const [blog, setBlog] = useState([
@@ -15,6 +17,45 @@ const IntroHeading = () => {
             link: "/blog/developer-portfolio-website",
         },
     ]);
+    const [project, setProject] = useState([
+      {
+        icon: <PenTool size={"34"} />,
+        heading: 'Moonbeam',
+        desc: 'Never write from scratch again. Kickstart your next great writing piece with Moonbeam. Your long-form writing AI assistant.',
+        link: '/',
+        skill: ["Front-end", "GPT-3","Next.js", "React","TailwindCSS","Chrome Extension"]
+      },
+      {
+        icon: <Anchor size={"34"} />,
+        heading: 'Moonbeam',
+        desc: 'Never write from scratch again. Kickstart your next great writing piece with Moonbeam. Your long-form writing AI assistant.',
+        link: '/',
+        skill: ["Next.js","React","TailwindCSS","Full-Stack"]
+      },
+      {
+        icon: <Banana size={"34"} />,
+        heading: 'Moonbeam',
+        desc: 'Never write from scratch again. Kickstart your next great writing piece with Moonbeam. Your long-form writing AI assistant.',
+        link: '/',
+        skill: ["Next.js","Stripe","TailwindCSS"]
+      },
+      {
+        icon: <PenTool size={"34"} />,
+        heading: 'Moonbeam',
+        desc: 'Never write from scratch again. Kickstart your next great writing piece with Moonbeam. Your long-form writing AI assistant.',
+        link: '/',
+        skill: ["Front-end", "GPT-3","Next.js", "React","TailwindCSS","Chrome Extension"]
+      }
+    ]);
+    const [upcommingProject, setUpcommingProject] = useState([
+      {
+        icon: <Banana size={"34"} />,
+        heading: 'Moonbeam',
+        desc: 'Never write from scratch again. Kickstart your next great writing piece with Moonbeam. Your long-form writing AI assistant.',
+        link: '/',
+        skill: ["Next.js","Stripe","TailwindCSS"]
+      }
+    ])
 
 
   return (
@@ -55,6 +96,8 @@ const IntroHeading = () => {
       <AvatarImage/>
     </div>
     <RecentBlogs blogElement= {blog}/>
+    <Projects project={project} titleElement={'Projects'}/>
+    <Projects project={upcommingProject} titleElement={'Upcomming Projects'}/>
     </>
   );
 };
