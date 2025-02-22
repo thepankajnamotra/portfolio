@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router";
 
 const Navbar = () => {
   return (
     <div className="sticky-nav flex justify-between items-center max-w-4xl w-full p-8 mt-0 mb-0 md:mt-4 md:mb-10 mx-auto bg-white dark:bg-zinc-900 bg-opacity-60">
-      <a href="#skip" className="sr-only focus:not-sr-only">
+      <Link to="#skip" className="sr-only focus:not-sr-only">
         Skip to content
-      </a>
+      </Link>
       <button
         aria-label="Toggle Dark Mode"
         type="button"
