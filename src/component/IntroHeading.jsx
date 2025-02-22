@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import AvatarImage from "./AvatarImage";
 
 const IntroHeading = () => {
 
@@ -35,8 +36,9 @@ const IntroHeading = () => {
             cool things
           </a>  
         </div>
-        <p className="text-zinc-600 dark:text-zinc-500"> Senior Software Engineer building SaaS products and web apps. Find me on <a href="https://twitter.com/mannupaaji" class="font-bold group dark:text-zinc-400 font-inter relative inline-flex overflow-hidden" target="__blank"><span class="relative">twitter</span></a> for tech updates and memes.</p>
+        <p className="text-zinc-600 dark:text-zinc-500"> Senior Software Engineer building SaaS products and web apps. Find me on <a href="https://twitter.com/mannupaaji" className="font-bold group dark:text-zinc-400 font-inter relative inline-flex overflow-hidden" target="__blank"><span className="relative">twitter</span></a> for tech updates and memes.</p>
       </div>
+      <AvatarImage/>
     </div>
   );
 };
