@@ -57,6 +57,79 @@ const IntroHeading = () => {
         skill: ["Next.js","Stripe","TailwindCSS"]
       }
     ])
+    const [lifeUpdate, setLifeUpdate] = useState([
+      {
+        year: '2023',
+        steps: [
+          {
+            heading: '300+ users on Algochurn 🤌🏻', 
+            desc: <><a href='https://algochurn.com' className="hover:underline" target='__blank'>{" "} Algochurn </a> crossed 300 users and I couldn't be any happie</>
+          },
+          {
+            heading: '300+ users on Algochurn 🤌🏻', 
+            desc: "Algochurn crossed 300 users and I couldn't be any happier."
+          }
+        ]
+      },
+      {
+        year: '2022',
+        steps: [
+          {
+            heading: '300+ users on Algochurn 🤌🏻', 
+            desc: "Algochurn crossed 300 users and I couldn't be any happier."
+          },
+          {
+            heading: '300+ users on Algochurn 🤌🏻', 
+            desc: "Algochurn crossed 300 users and I couldn't be any happier."
+          },
+          {
+            heading: '300+ users on Algochurn 🤌🏻', 
+            desc: "Algochurn crossed 300 users and I couldn't be any happier."
+          },
+          {
+            heading: '300+ users on Algochurn 🤌🏻', 
+            desc: "Algochurn crossed 300 users and I couldn't be any happier."
+          },
+          {
+            heading: '300+ users on Algochurn 🤌🏻', 
+            desc: "Algochurn crossed 300 users and I couldn't be any happier."
+          },
+          {
+            heading: '300+ users on Algochurn 🤌🏻', 
+            desc: "Algochurn crossed 300 users and I couldn't be any happier."
+          }
+        ]
+      },
+      {
+        year: '2021',
+        steps: [
+          {
+            heading: '300+ users on Algochurn 🤌🏻', 
+            desc: "Algochurn crossed 300 users and I couldn't be any happier."
+          },
+          {
+            heading: '300+ users on Algochurn 🤌🏻', 
+            desc: "Algochurn crossed 300 users and I couldn't be any happier."
+          },
+          {
+            heading: '300+ users on Algochurn 🤌🏻', 
+            desc: "Algochurn crossed 300 users and I couldn't be any happier."
+          },
+          {
+            heading: '300+ users on Algochurn 🤌🏻', 
+            desc: "Algochurn crossed 300 users and I couldn't be any happier."
+          },
+          {
+            heading: '300+ users on Algochurn 🤌🏻', 
+            desc: "Algochurn crossed 300 users and I couldn't be any happier."
+          },
+          {
+            heading: '300+ users on Algochurn 🤌🏻', 
+            desc: "Algochurn crossed 300 users and I couldn't be any happier."
+          }
+        ]
+      }
+    ])
 
 
   return (
@@ -99,7 +172,7 @@ const IntroHeading = () => {
     <RecentBlogs blogElement= {blog}/>
     <Projects project={project} titleElement={'Projects'}/>
     <Projects project={upcommingProject} titleElement={'Upcomming Projects'}/>
-    <LifeUpdates/>
+    <LifeUpdates lifeUpdate={lifeUpdate}/>
     </>
   );
 };
