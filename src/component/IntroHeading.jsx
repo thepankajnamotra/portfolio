@@ -296,7 +296,7 @@ const IntroHeading = () => {
       </div>
       <AvatarImage/>
     </div>
-    <RecentBlogs blogElement= {blog}/>
+    {/* <RecentBlogs blogElement= {blog}/> */}
     <Projects project={project} titleElement={'Projects'}/>
     <Projects project={upcommingProject} titleElement={'Upcomming Projects'}/>
     <LifeUpdates lifeUpdate={lifeUpdate}/>
