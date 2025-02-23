@@ -4,33 +4,33 @@ import avatar from "../assets/avatar.png";
 
 // styled component
 const img = styled.img`
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    box-sizing: border-box;
-    padding: 0;
-    border: none;
-    margin: auto;
-    display: block;
-    width: 0;
-    height: 0;
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 100%;
-    max-height: 100%;
-    object-fit: cover;
-  `;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 0;
+  border: none;
+  margin: auto;
+  display: block;
+  width: 0;
+  height: 0;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+`;
 
 const AvatarImage = () => {
-
   return (
     <div className=" relative flex-shrink-1 p-4 md:p-4 md:order-last order-first">
       <a
-        href="twitter.com/pankajnamotra"
+        href="https://x.com/pankajnamotra"
         className="block z-[5] overflow-hidden rounded-full
  shadow-xl ring-1 ring-slate-900/5 relative bg-white h-20 w-20"
+        target="_blank"
       >
         <span className="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0"></span>
         <img
