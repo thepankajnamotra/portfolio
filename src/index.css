@@ -1,2 +1,12 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
+
+.sticky-nav{
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    -webkit-backdrop-filter: saturate(180%) blur(15px);
+    backdrop-filter: saturate(180%) blur(15px);
+    transition: background-color .1 ease-in-out;
+    background: rgba(0, 0, 0, 0);
+}

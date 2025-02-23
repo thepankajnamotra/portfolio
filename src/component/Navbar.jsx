@@ -1,13 +1,16 @@
 import React from "react";
 import { Link } from "react-router";
 
-const Navbar = () => {
+const Navbar = ({setDark}) => {
   return (
     <div className="sticky-nav flex justify-between items-center max-w-4xl w-full p-8 mt-0 mb-0 md:mt-4 md:mb-10 mx-auto bg-white dark:bg-zinc-900 bg-opacity-60">
       <Link to="#skip" className="sr-only focus:not-sr-only">
         Skip to content
       </Link>
       <button
+        onClick={() => {
+          setDark((last)=> !last); 
+        }}
         aria-label="Toggle Dark Mode"
         type="button"
         className="group rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-zinc-900/90 dark:ring-teal-500/50 dark:hover:ring-white/20"
