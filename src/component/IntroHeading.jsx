@@ -1,10 +1,67 @@
 import React, { useState } from "react";
+import AvatarImage from "./AvatarImage";
+import RecentBlogs from "./RecentBlogs";
+import Projects from "./Projects";
+import { Anchor, Banana, PenTool, UtensilsCrossed } from "lucide-react";
+import LifeUpdates from "./LifeUpdates";
 
 const IntroHeading = () => {
+    const [blog, setBlog] = useState([
+        {
+            name: "Ace the Javascript Interview - Practical questions to help you clear your next interview",
+            other: "22, Feb 2025",
+            link: "/blog/ace-the-javascript-interview",
+        },
+        {
+            name: "Free portfolio website template that gets you hired in 2021",
+            other: "20, Feb 2025",
+            link: "/blog/developer-portfolio-website",
+        },
+    ]);
+    const [project, setProject] = useState([
+      {
+        icon: <PenTool size={"34"} />,
+        heading: 'Moonbeam',
+        desc: 'Never write from scratch again. Kickstart your next great writing piece with Moonbeam. Your long-form writing AI assistant.',
+        link: '/',
+        skill: ["Front-end", "GPT-3","Next.js", "React","TailwindCSS","Chrome Extension"]
+      },
+      {
+        icon: <Anchor size={"34"} />,
+        heading: 'Moonbeam',
+        desc: 'Never write from scratch again. Kickstart your next great writing piece with Moonbeam. Your long-form writing AI assistant.',
+        link: '/',
+        skill: ["Next.js","React","TailwindCSS","Full-Stack"]
+      },
+      {
+        icon: <Banana size={"34"} />,
+        heading: 'Moonbeam',
+        desc: 'Never write from scratch again. Kickstart your next great writing piece with Moonbeam. Your long-form writing AI assistant.',
+        link: '/',
+        skill: ["Next.js","Stripe","TailwindCSS"]
+      },
+      {
+        icon: <PenTool size={"34"} />,
+        heading: 'Moonbeam',
+        desc: 'Never write from scratch again. Kickstart your next great writing piece with Moonbeam. Your long-form writing AI assistant.',
+        link: '/',
+        skill: ["Front-end", "GPT-3","Next.js", "React","TailwindCSS","Chrome Extension"]
+      }
+    ]);
+    const [upcommingProject, setUpcommingProject] = useState([
+      {
+        icon: <UtensilsCrossed size={"34"} />,
+        heading: 'Moonbeam',
+        desc: 'Never write from scratch again. Kickstart your next great writing piece with Moonbeam. Your long-form writing AI assistant.',
+        link: '/',
+        skill: ["Next.js","Stripe","TailwindCSS"]
+      }
+    ])
 
 
   return (
-    <div className="flex flex-col md:flex-row justify-between items-start md:space-x-14 w-full mb-10">
+    <>
+        <div className="flex flex-col md:flex-row justify-between items-start md:space-x-14 w-full mb-10">
       <div className="flex md:w-3/4 flex-col mt-6">
         <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-2 text-black dark:text-white">
           Pankaj Namotra
@@ -35,9 +92,15 @@ const IntroHeading = () => {
             cool things
           </a>  
         </div>
-        <p className="text-zinc-600 dark:text-zinc-500"> Senior Software Engineer building SaaS products and web apps. Find me on <a href="https://twitter.com/mannupaaji" class="font-bold group dark:text-zinc-400 font-inter relative inline-flex overflow-hidden" target="__blank"><span class="relative">twitter</span></a> for tech updates and memes.</p>
+        <p className="text-zinc-600 dark:text-zinc-500"> Senior Software Engineer building SaaS products and web apps. Find me on <a href="https://twitter.com/mannupaaji" className="font-bold group dark:text-zinc-400 font-inter relative inline-flex overflow-hidden" target="__blank"><span className="relative">twitter</span></a> for tech updates and memes.</p>
       </div>
+      <AvatarImage/>
     </div>
+    <RecentBlogs blogElement= {blog}/>
+    <Projects project={project} titleElement={'Projects'}/>
+    <Projects project={upcommingProject} titleElement={'Upcomming Projects'}/>
+    <LifeUpdates/>
+    </>
   );
 };
 
