@@ -1,5 +1,6 @@
 import React from 'react'
 import LifeUpdateList from './LifeUpdateList'
+import SeeAllAnchor from './SeeAllAnchor';
 
 const LifeUpdates = ({lifeUpdate}) => {
   if(!lifeUpdate || lifeUpdate.length===0) return;
@@ -13,6 +14,7 @@ const LifeUpdates = ({lifeUpdate}) => {
         return <LifeUpdateList key={i} current={current}/>
       })
     }
+    <SeeAllAnchor link={'/blogs'} text={'See More'}/>
     </>
   )
 }
