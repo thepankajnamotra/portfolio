@@ -4,6 +4,7 @@ import RecentBlogs from "./RecentBlogs";
 import Projects from "./Projects";
 import { Anchor, Banana, PenTool, UtensilsCrossed } from "lucide-react";
 import LifeUpdates from "./LifeUpdates";
+import ContactMe from "./ContactMe";
 
 const IntroHeading = () => {
     const [blog, setBlog] = useState([
@@ -173,6 +174,7 @@ const IntroHeading = () => {
     <Projects project={project} titleElement={'Projects'}/>
     <Projects project={upcommingProject} titleElement={'Upcomming Projects'}/>
     <LifeUpdates lifeUpdate={lifeUpdate}/>
+    <ContactMe />
     </>
   );
 };
