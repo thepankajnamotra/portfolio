@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import AvatarImage from "./AvatarImage";
 import RecentBlogs from "./RecentBlogs";
 import Projects from "./Projects";
-import { Anchor, Banana, PenTool } from "lucide-react";
+import { Anchor, Banana, PenTool, UtensilsCrossed } from "lucide-react";
+import LifeUpdates from "./LifeUpdates";
 
 const IntroHeading = () => {
     const [blog, setBlog] = useState([
@@ -49,7 +50,7 @@ const IntroHeading = () => {
     ]);
     const [upcommingProject, setUpcommingProject] = useState([
       {
-        icon: <Banana size={"34"} />,
+        icon: <UtensilsCrossed size={"34"} />,
         heading: 'Moonbeam',
         desc: 'Never write from scratch again. Kickstart your next great writing piece with Moonbeam. Your long-form writing AI assistant.',
         link: '/',
@@ -98,6 +99,7 @@ const IntroHeading = () => {
     <RecentBlogs blogElement= {blog}/>
     <Projects project={project} titleElement={'Projects'}/>
     <Projects project={upcommingProject} titleElement={'Upcomming Projects'}/>
+    <LifeUpdates/>
     </>
   );
 };
