@@ -87,7 +87,7 @@ const IntroHeading = () => {
         steps: [
           {
             heading: "Internship - Codequotient 🤘🏻", 
-            desc: <>Landed an internship at <a href='https://codequotient.com/' className="underline" target='_blank'> CodeQuotient</a>—built a B2B flight booking system prototype and a web crawler. Leveling up my dev game</>
+            desc: <>Landed an internship at <a href='https://codequotient.com/' className="underline" target='_blank'> CodeQuotient</a>—built a B2B flight booking system prototype and a web crawler. Leveling up my dev. game</>
           },
           {
             heading: "Placements - Got Placed ✨",
@@ -101,8 +101,8 @@ const IntroHeading = () => {
         year: '2022',
         steps: [
           {
-            heading: "Campus Designer & NCC Coordinator 🎖️",
-            desc: "Became graphic designer for my college campus, joined NCC, and even rose to the rank of NCC Coordinator balancing creativity with discipline!"
+            heading: "Campus Designer & NSS Coordinator 🎖️",
+            desc: "Became graphic designer for my college campus, joined NSS, and even rose to the rank of NSS Coordinator balancing creativity with discipline!"
           }
         ]
       },
@@ -239,7 +239,7 @@ const IntroHeading = () => {
         year: '2004',
         steps: [
           {
-            heading: 'Got admission in BSF 🏫', 
+            heading: 'Got admission in Military school 🏫', 
             desc: "Got admission in BSF Military school and moved from home town to Jammu capital city."
           }
         ]
@@ -249,7 +249,7 @@ const IntroHeading = () => {
         steps: [
           {
             heading: 'Celebration', 
-            desc: "An Enginner was Born in India 👶🏼 🍼"
+            desc: "An Engineer was Born in India 👶🏼 🍼"
           }
         ]
       },
