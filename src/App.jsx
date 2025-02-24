@@ -13,7 +13,6 @@ function App() {
       localStorage.setItem('theme', 'dark');
     }
     else{
-      console.log("**")
       document.documentElement.classList.add('light');
       document.documentElement.classList.remove('dark');
       localStorage.setItem('theme', 'light');
