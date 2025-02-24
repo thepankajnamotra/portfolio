@@ -101,12 +101,8 @@ const IntroHeading = () => {
         year: '2022',
         steps: [
           {
-            heading: "Started freelancing 🍾", 
-            desc: <>Started freelancing wordpress and shopify websites and booked some clients like: <a href="https://kishmishstudio.com/" className="underline" target='__blank'>kishmishstudio</a>, <a href="https://blingthingstore.com/" className="underline" target='__blank'>blingthingstore</a> and more.</>
-          },
-          {
-            heading: "Campus Designer & NCC Captain 🎖️",
-            desc: "Became graphic designer for my college campus, joined NCC, and even rose to the rank of captain balancing creativity with discipline!"
+            heading: "Campus Designer & NCC Coordinator 🎖️",
+            desc: "Became graphic designer for my college campus, joined NCC, and even rose to the rank of NCC Coordinator balancing creativity with discipline!"
           }
         ]
       },
