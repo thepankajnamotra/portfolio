@@ -63,7 +63,6 @@ const Navbar = ({ setDark }) => {
       </div>
       <div
         className="block sm:hidden"
-        links="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
       >
         <div className="w-full flex flex-row items-center space-x-2">
           <button className="relative rounded-lg px-1 py-1 sm:px-4 sm:py-2 text-sm text-gray-700 dark:text-gray-200 transition-all delay-150 hover:text-gray-900 dark:hover:text-gray-900">
